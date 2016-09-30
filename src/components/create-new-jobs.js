@@ -37,7 +37,11 @@ class CreateJobs extends Component{
     const company = this.refs.company.value;
     const id = Math.floor((Math.random() * 100) + 1);
 
-    this.props.createJob(id, jobtitle, description, availability, company);
+    if(jobtitle === "" || description === "" || availability === "" || company === ""){
+        alert("Provide all details for the job");
+    }else{
+        this.props.createJob(id, jobtitle, description, availability, company);
+    }
     this.refs.title.value = "";
     this.refs.description.value = "";
     this.refs.company.value = "";
