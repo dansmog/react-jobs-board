@@ -48,10 +48,10 @@ button{
   width:100%;
   padding:10px;
   background-color:#fff;
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 .job-item h2{color:#34495e;}
-.job-item p{margin:10px 0 15px 0; color:#333;;}
+.job-item p{margin:10px 0 15px 0; color:#333;line-height:1.5em;}
 .apply-link{
   color:#fff;
   background-color:#2ecc71;
@@ -59,5 +59,18 @@ button{
   text-decoration: none;
 }
 #jobsform{
-  display:block;
+  display:none;
 }
+
+.tags{
+  width:auto;
+  height:auto;
+  list-style: none;
+  display: block;
+  margin-top:20px;
+  margin-bottom:80px;
+}
+.tags li{float:left;padding:10px 15px; background-color:#34495e;cursor:pointer;color:#fff;}
+.tags li:hover{background-color:#2ecc71;color:#fff;}
+
+
