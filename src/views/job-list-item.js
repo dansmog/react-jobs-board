@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class CreateJobs extends Component{
+class JobListItem extends Component{
     render(){
         return(
-            <form onSubmit={this.handleCreate.bind(this)}>
+            <form onSubmit={this.handleCreate}>
                 <div className="input-group">
                     <input type="text" ref="title" placeholder="Job Title"/>
                 </div>
                 <div className="input-group">
-                    <textarea ref="description" placeholder="Description"></textarea>
+                    <input type="text" ref="description" placeholder="Description"/>
                 </div>
                 <div className="input-group">
                     <button>Post Job</button>
@@ -16,15 +16,19 @@ class CreateJobs extends Component{
             </form>
         )
     }
-
- handleCreate(event){
+handleCreate(event){
     event.preventDefault();
+
     const title = this.refs.title.value;
     const description = this.refs.description.value;
     const id = Math.floor((Math.random() * 100) + 1);
 
-    this.props.createJob(id, title, description);
+    if(title === '' || description === ''){
+        alert('please enter a job and description');
+    }else{
+        this.props.createJob(id, title, description);
+    }
   }
 }
 
-export default CreateJobs
+export default JobListItem
