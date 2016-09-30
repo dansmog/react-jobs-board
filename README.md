@@ -9,4 +9,4 @@ Run `npm install`
 then cd into the directory and run `npm start`
 
 
-![My image](dansmog.github.com/react-jobs-board/src/image.jpg)
+![My image](/src/image.jpg)
