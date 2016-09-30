@@ -34,9 +34,11 @@ form{
 .input-group input, textarea{
   width:100%;padding:10px;
 }
+.input-group select{
+  cursor:pointer; padding:8px 15px;background-color:#ccc;margin-right:10px;
+}
 textarea{height:40px;}
 button{
-  float:right;
   width:150px;
   padding:10px 15px;
   background-color:#2ecc71;
@@ -44,11 +46,15 @@ button{
   border:0;
   cursor: pointer;
 }
+.float-left{
+  float:right;
+}
 .job-item{
   width:100%;
   padding:10px;
   background-color:#fff;
   margin-bottom:20px;
+  clear:both;
 }
 .job-item h2{color:#34495e;}
 .job-item p{margin:10px 0 15px 0; color:#333;line-height:1.5em;}
@@ -72,4 +78,5 @@ button{
 }
 .tags li{float:left;padding:10px 15px; background-color:#34495e;cursor:pointer;color:#fff;}
 .tags li:hover{background-color:#2ecc71;color:#fff;}
-
+.info{margin-top:10px;display:block;margin-bottom:20px;}
+.info .tag{margin-right:10px;}

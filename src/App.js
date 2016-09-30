@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import Firebase             from 'firebase';
 import Header               from './components/Header';
 import JobList              from './views/JobList';
 import CreateJobs           from './components/create-new-jobs';
@@ -7,16 +8,17 @@ import './App.css';
 
 
 class App extends Component{
+ 
   constructor(props){
     super(props);
     this.state = { 
       jobs: props.jobs,
-      formDisplayed: false
+      formDisplayed: false,
     }
   }
 
- createJob(id, jobtitle, description){
-    const recentJobs = this.state.jobs.concat({id, jobtitle, description});
+ createJob(id, jobtitle, description, availability, company){
+    const recentJobs = this.state.jobs.concat({id, jobtitle, description, availability, company});
     this.setState({jobs: recentJobs});
   }
 

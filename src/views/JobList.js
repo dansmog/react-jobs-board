@@ -6,6 +6,10 @@ class JobList extends Component{
       return (
         <div key={i} className="job-item">
           <h2>{job.jobtitle}</h2>
+            <div className="info">
+              <span className="tag">Available As: {job.availability}</span>
+              <span className="company">Company: {job.company}</span>
+            </div>
           <p>{job.description}</p>
           <a className="apply-link" href="#">Apply</a>
         </div>
