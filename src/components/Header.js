@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-
+import Logoimage from '../logo.svg';
 
 class Header extends Component{
   render(){
+    let classString;
+
+    if(this.props.visible){
+      classString = "post-job-link";
+    }else{
+      classString = "post-job-link";
+    }
     return (
         <div className="header">
           <div className="container">
-            <img src={require("../logo.svg")} className="logo" role="presentation"/>
-            <a href="#" className="post-job-link" onClick={this.toggle}>Post Job</a>
+             <img src={Logoimage} className="logo" alt="logo"/>
+            <a href="#" className={classString}  onClick={this.props.onToggleForm.bind(this)}>Post Job</a>
           </div>
         </div> 
     )

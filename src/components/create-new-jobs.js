@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 class CreateJobs extends Component{
     render(){
+        var display = this.props.displayed ? 'block' : 'none';
+        var styles = {display: display}
         return(
-            <form onSubmit={this.handleCreate.bind(this)} id="jobsform">
+            <form style={styles} onSubmit={this.handleCreate.bind(this)} id="jobsform">
                 <div className="input-group">
                     <input type="text" ref="title" placeholder="Job Title"/>
                 </div>
@@ -24,6 +26,9 @@ class CreateJobs extends Component{
     const id = Math.floor((Math.random() * 100) + 1);
 
     this.props.createJob(id, jobtitle, description);
+    this.refs.title.value = "";
+    this.refs.description.value = "";
+
   }
 }
 
