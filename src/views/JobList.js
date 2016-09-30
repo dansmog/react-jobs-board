@@ -7,7 +7,7 @@ class JobList extends Component{
         <div key={i} className="job-item">
           <h2>{job.jobtitle}</h2>
           <p>{job.description}</p>
-          <a className="apply-link">Apply</a>
+          <a className="apply-link" href="#">Apply</a>
         </div>
       )
     })

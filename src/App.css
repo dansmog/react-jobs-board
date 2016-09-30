@@ -42,16 +42,19 @@ button{
   background-color:#2ecc71;
   color:#fff;
   border:0;
+  cursor: pointer;
 }
 .job-item{
   width:100%;
   padding:10px;
-  background-color:#f3f3f3;
+  background-color:#fff;
   margin-bottom:10px;
 }
-.job-item p{margin:10px 0}
+.job-item h2{color:#34495e;}
+.job-item p{margin:10px 0 15px 0; color:#333;;}
 .apply-link{
   color:#fff;
   background-color:#2ecc71;
   padding:5px 15px;
+  text-decoration: none;
 }
