@@ -58,3 +58,6 @@ button{
   padding:5px 15px;
   text-decoration: none;
 }
+#jobsform{
+  display:block;
+}
