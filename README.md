@@ -9,4 +9,4 @@ Run `npm install`
 then cd into the directory and run `npm start`
 
 
-![My image](/src/image.jpg)
+![alt tag](https://www.dropbox.com/s/xttagebur3c6k2d/react-jobs-board.png?dl=0)
