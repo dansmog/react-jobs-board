@@ -7,3 +7,6 @@ A React Job Board where users can share jobs related to reactjs, react-native et
 
 Run `npm install`
 then cd into the directory and run `npm start`
+
+
+![alt tag](https://www.dropbox.com/s/xttagebur3c6k2d/react-jobs-board.png?dl=0)
