@@ -1,5 +1,7 @@
+<p align="center">
+<img align="center" src="src/react-jobs-board.png" width="100%" alt="react-redux jobs board"/>
+</p>
 A React Job Board where users can share jobs related to reactjs, react-native etc. 
-
 
 ### STEPS TO USING THIS PROJECT
 
@@ -9,4 +11,4 @@ Run `npm install`
 then cd into the directory and run `npm start`
 
 
-![alt tag](https://www.dropbox.com/s/xttagebur3c6k2d/react-jobs-board.png?dl=0)
+
